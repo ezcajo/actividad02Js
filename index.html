@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title>👨‍🎓 Actividad 01 Js</title>
+	
+</head>
+<body class="bg-info">
+	<h1 class="display-1 text-center">👨‍🎓 Actividad 02 Js</h1>
+	
+	<!--Comienzo del contenedor-->
+	<div class="container">
+		
+		<!--Comienzo de la fila-->
+		<div class="row text-center m-auto justify-content-center">
+			<!--Comienzo de la Columna-->
+			<div class="col-12 display-4">
+				<p class="h1 m-5">Tabla de Multiplicar del 9 al 11</p>
+			</div>
+			<!--Final de la Columna-->
+	
+			<!--Comienzo de la columna tabla 11-->
+			<div class="col-3">
+				<p class="text-danger h2">Tabla del 11</p>
+				<div class="text-center display-5  p-3 mb-2 bg-light text-danger align-middle" id="tabla11">
+				</div>
+			</div>
+			<!--Final  de la columna-->
+
+			<!--Comienzo de la columna tabla 10-->
+			<div class="col-3">
+				<p class="text-danger h2">Tabla del 10</p>
+				<div class="text-center display-5  p-3 mb-2 bg-dark text-primary align-middle" id="tabla10">
+				</div>
+			</div>
+			<!--Final  de la columna-->
+
+			<!--Comienzo de la columna tabla 09-->
+			<div class="col-3">
+				<p class="text-danger h2">Tabla del 9</p>
+				<div class="text-center display-5  p-3 mb-2 bg-danger text-success align-middle" id="tabla9">
+				</div>
+			</div>
+			<!--Final  de la columna-->
+			
+		</div>
+		<!--Final de la fila-->
+	</div>
+	<!--Final del contenedor-->
+
+	<!--Comienzo de la etiqueta Script-->
+<script>
+
+/* Esta funcion solicita como parametro el valor de la tabla ara generar*/
+function tablaMultiplicar(valor) {
+		for (var i = 1; i < 11; i++) {
+		document.getElementById('tabla'+valor).innerHTML += valor +' x '+ i+ ' = '+i*valor +'<br>';
+		}
+	}
+
+	/* Se llama a la funcion con los distintos argumentos de tabla solicitada*/	
+	tablaMultiplicar(11);
+	tablaMultiplicar(10);
+	tablaMultiplicar(9);
+</script>
+	<!--Final de la etiqueta Script-->
+</body>
+</html>
