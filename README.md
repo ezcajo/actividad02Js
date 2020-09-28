@@ -1,1 +1,1 @@
-# actividad02Js
+# Actividad obligatoria 02- JavaScript
